@@ -10,9 +10,10 @@ namespace GScrum.DAL
 {
     public class GScrumContext : DbContext
     {
-        public static GScrumContext current
+        public GScrumContext()
+            : base("GScrumContext")
         {
-            get { return HttpContext.Current.Items["GScrumContext"] as GScrumContext; }
+            this.Database.Log = s => System.Diagnostics.Debug.WriteLine(s);
         }
 
         public DbSet<Board> Boards { get; set; }

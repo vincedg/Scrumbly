@@ -39,3 +39,4 @@ C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScru
 C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.csproj.GenerateResource.Cache
 C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.dll
 C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.pdb
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.csprojResolveAssemblyReference.cache

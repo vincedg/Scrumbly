@@ -1,3 +1,35 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<div class="board-outline">
+    <div id="board">
+        <div id="board-doodles"></div>
+        <image id="marker" src="~/Content/images/marker.png"></image>
+        <image id="eraser" src="~/Content/images/eraser.png"></image>
+        <table id="board-table" class="board-table">
+            <tr>
+                <td id="icon-col" width="1%">
+                    <image id="add-col" width="20" height="20" src="~/Content/images/icons/iconic/raster/black/plus_alt_32x32.png" class="col-icon"></image>
+                    <image id="delete-col" width="20" height="20" src="~/Content/images/icons/iconic/raster/black/minus_alt_32x32.png" class="col-icon"></image>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="buttons"><i id="create-card" class="fa fa-plus-circle fa-2x bottom-icon"></i><i id="smallify" class="fa fa-expand fa-2x bottom-icon"></i></div>
+<div class="stickers">
+    <div id="sticker-red" class="sticker"></div>
+    <div id="sticker-blue" class="sticker"></div>
+    <div id="sticker-yellow" class="sticker"></div>
+    <div id="sticker-green" class="sticker"></div><br />
+    <div id="sticker-pink" class="sticker"></div>
+    <div id="sticker-lightblue" class="sticker"></div>
+    <div id="sticker-orange" class="sticker"></div>
+    <div id="sticker-purple" class="sticker"></div><br />
+    <div id="nosticker" class="sticker"></div>
+</div>
+<div class="names">
+    <p>connected:</p>
+    <input id="yourname-input" /><span class="you-text">(you)</span>
+    <ul id="names-ul"></ul>
+</div>
