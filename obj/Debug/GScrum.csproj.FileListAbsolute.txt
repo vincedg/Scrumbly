@@ -30,3 +30,12 @@ C:\Users\k0547150\Documents\Visual Studio 2013\Projects\GScrum\GScrum\obj\Debug\
 C:\Users\k0547150\Documents\Visual Studio 2013\Projects\GScrum\GScrum\obj\Debug\GScrum.pdb
 C:\Users\k0547150\Documents\Visual Studio 2013\Projects\GScrum\GScrum\obj\Debug\GScrum.Migrations.Initial.resources
 C:\Users\k0547150\Documents\Visual Studio 2013\Projects\GScrum\GScrum\obj\Debug\GScrum.csproj.GenerateResource.Cache
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\bin\GScrum.dll.config
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\bin\GScrum.dll
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\bin\GScrum.pdb
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.Migrations.Initial.resources
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.csproj.GenerateResource.Cache
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.dll
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.pdb
