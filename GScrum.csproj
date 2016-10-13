@@ -128,6 +128,18 @@
     <Compile Include="Migrations\201602231801120_Initial.Designer.cs">
       <DependentUpon>201602231801120_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201602261731335_FixingRobsBlunders.cs" />
+    <Compile Include="Migrations\201602261731335_FixingRobsBlunders.Designer.cs">
+      <DependentUpon>201602261731335_FixingRobsBlunders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602261828035_FixingRobsBlunders2.cs" />
+    <Compile Include="Migrations\201602261828035_FixingRobsBlunders2.Designer.cs">
+      <DependentUpon>201602261828035_FixingRobsBlunders2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602261853508_AddCardNumber.cs" />
+    <Compile Include="Migrations\201602261853508_AddCardNumber.Designer.cs">
+      <DependentUpon>201602261853508_AddCardNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Board.cs" />
     <Compile Include="Models\BoardColumn.cs" />
@@ -136,6 +148,10 @@
     <Compile Include="Models\Task.cs" />
     <Compile Include="Models\TaskSticker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\BoardVM.cs" />
+    <Compile Include="ViewModels\ColumnVM.cs" />
+    <Compile Include="ViewModels\StickerVM.cs" />
+    <Compile Include="ViewModels\CardVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -2687,10 +2703,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Board.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -2703,6 +2719,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201602231801120_Initial.resx">
       <DependentUpon>201602231801120_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602261731335_FixingRobsBlunders.resx">
+      <DependentUpon>201602261731335_FixingRobsBlunders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602261828035_FixingRobsBlunders2.resx">
+      <DependentUpon>201602261828035_FixingRobsBlunders2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602261853508_AddCardNumber.resx">
+      <DependentUpon>201602261853508_AddCardNumber.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

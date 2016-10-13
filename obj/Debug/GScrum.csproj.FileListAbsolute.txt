@@ -40,3 +40,6 @@ C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScru
 C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.dll
 C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.pdb
 C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.csprojResolveAssemblyReference.cache
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.Migrations.FixingRobsBlunders.resources
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.Migrations.FixingRobsBlunders2.resources
+C:\Users\k0575722\Documents\Visual Studio 2013\Projects\Scrumbly\obj\Debug\GScrum.Migrations.AddCardNumber.resources

@@ -3,6 +3,9 @@
 @{
     ViewBag.Title = "Home Page";
 }
+<div class="demo-header">
+    <h3>Test</h3>
+</div>
 <div class="board-outline">
     <div id="board">
         <div id="board-doodles"></div>
@@ -35,42 +38,3 @@
     <input id="yourname-input" /><span class="you-text">(you)</span>
     <ul id="names-ul"></ul>
 </div>
-
-<script>
-    function getBoard() {
-        $.ajax({
-            url: '@Url.Action("GetBoard", "Home")', 
-            data: {Id: 1},
-            cache: false,
-            type: 'GET',
-            success: function (result) {
-                if (result.data.Cards !== null) {
-                    var cards = result.data.Cards;
-                    var newCards = [];
-                    for (var i = 0; i < cards.length; i++) {                        
-                        newCards.push({id: cards[i].CardNumber,
-                            text: cards[i].Description,
-                            x:cards[i].X_Axis,
-                            y:cards[i].Y_Axis,
-                            rot: 0,
-                            colour: cards[i].Colour,
-                            sticker:null,
-                            });
-                    }
-                    initCards(newCards);
-                }
-                if (result.data.Columns) {
-                    initColumns(result.data.Columns);
-                }
-                var size = { height: result.data.Height, width: result.data.Width };
-                resizeBoard(size);
-            },
-            error: function (result) {
-
-            }
-        });
-    }
-    $(document).ready(function () {
-        getBoard();
-    });
-</script>

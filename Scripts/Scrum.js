@@ -9,13 +9,118 @@ var baseurl = location.pathname.substring(0, location.pathname.lastIndexOf('/'))
 
 //an action has happened, send it to the
 //server
-function sendAction(a, d) {
-    console.log(a + " ---> ", d);
+function sendAction(a, d) {    
+    var ajaxIt = false;
+    var controllerName = null;
+    var data = {};
+    switch (a) {
+        case 'roomAccept':          
+            break;
+        case 'moveCard':
+            var cardData = {                  
+                CardNumber: d.id,
+                Description: d.text,
+                X_Axis: d.position.left,
+                Y_Axis: d.position.top,
+                Colour: d.colour
+            };
+            data = JSON.stringify({ cardModel: cardData });
+            ajaxIt = true;
+            break;
 
+        case 'initCards':
+            break;
+
+        case 'createCard':            
+            var cardData = {                
+                CardNumber: d.id,
+                Description: d.text,
+                X_Axis: d.x,
+                Y_Axis: d.y,
+                Colour: d.colour
+            };
+            data = JSON.stringify({ cardModel: cardData });
+            ajaxIt = true;
+            break;
+
+        case 'deleteCard':
+            var cardData = {
+                CardNumber: d.id,
+            };
+            data = JSON.stringify({ cardModel: cardData });
+            ajaxIt = true;
+            break;
+
+        case 'editCard':
+            var cardData = {                
+                CardNumber: d.id,
+                Description: d.value        
+            };
+            data = JSON.stringify({ cardModel: cardData });
+            ajaxIt = true;
+            break;
+
+        case 'initColumns':
+            break;
+
+        case 'updateColumns':
+            
+            data = JSON.stringify({ columns: d });
+            ajaxIt = true;
+            break;
+
+        case 'changeTheme':
+            data = JSON.stringify({ newTheme: theme });
+            break;        
+
+        case 'addSticker':
+            break;
+
+        case 'setBoardSize':
+            var boardModel = {
+                Height: d.height,
+                Width: d.width
+            };
+            data = JSON.stringify({ boardModel: boardModel });
+            ajaxIt = true;
+            break;
+
+        default:
+            break;
+    }
     var message = {
         action: a,
         data: d
-    };    
+    };
+    if (ajaxIt) {
+        var absUrl = window.location.pathname;
+
+        var last = absUrl.slice(-1);
+
+        var url;
+        var controllerName = "Home"
+        if (last == '\/') {
+            url = absUrl + controllerName + '/' + a;
+        }
+        else {
+            url = absUrl + '/' + controllerName + '/' + a;
+        }
+        $.ajax({
+            url: url,
+            data: data,
+            cache: false,
+            type: 'POST',
+            dataType: 'html',
+            contentType: 'application/json',
+            success: function (result) {
+                
+            },
+            error: function (result) {
+                
+            }
+        });
+    }
+    
 }
 
 
@@ -239,7 +344,7 @@ function drawNewCard(id, text, x, y, rot, colour, sticker, animationspeed) {
             });
         }
     );
-
+    console.log(card.children('.content'));
     card.children('.content').editable(function (value, settings) {
         onCardChange(id, value);
         return (value);

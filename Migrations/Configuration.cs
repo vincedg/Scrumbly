@@ -1,5 +1,6 @@
 namespace GScrum.Migrations
 {
+    using GScrum.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -26,6 +27,10 @@ namespace GScrum.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            context.Colours.AddOrUpdate(p => p.Name,
+                new Colour { Name = "red" },
+                new Colour { Name = "blue" },
+                new Colour { Name = "green" }, new Colour { Name = "yellow" }, new Colour { Name = "lightblue" }, new Colour { Name = "white" });
         }
     }
 }

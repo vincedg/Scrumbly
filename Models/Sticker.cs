@@ -9,5 +9,6 @@ namespace GScrum.Models
     {
         public int Id { get; set; }
         public int ColourId { get; set; } //fk
+        public virtual Colour Colour { get; set; }
     }
 }

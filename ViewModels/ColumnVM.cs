@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace GScrum.Models
+namespace GScrum.ViewModels
 {
-    public class BoardColumn
+    public class ColumnVM
     {
         public int Id { get; set; }
 
@@ -14,7 +14,5 @@ namespace GScrum.Models
         public Nullable<DateTime> DeletedAt { get; set; }
 
         public int BoardId { get; set; } // fk
-
-        public virtual Board Board { get; set; }
     }
 }
